@@ -152,6 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "潮韵 - 专业的生理期追踪应用": "Chao Yun - Professional Menstrual Cycle Tracker",
       潮韵: "Chao Yun",
       功能: "Features",
+      隐私:"Privacy",
       隐私保障: "Privacy",
       下载: "Download",
       隐私政策: "Privacy Policy",
