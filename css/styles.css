@@ -5,7 +5,7 @@
   --primary-light: #9d4edd;
   --primary-dark: #5a189a;
   --accent-color: #ff758f;
-
+  --img-opacity:1;
   /* 文本颜色 */
   --text-primary: #1a1a2e;
   --text-secondary: #4a4e69;
@@ -44,6 +44,7 @@
   --primary-light: #c77dff;
   --primary-dark: #7b2cbf;
   --accent-color: #ff758f;
+  --img-opacity:0.8;
 
   /* 文本颜色 */
   --text-primary: #f8f9fa;
@@ -465,6 +466,7 @@ nav {
 .privacy {
   display: flex;
   align-items: center;
+  gap: 60px;
   padding: 100px 5%;
   background-color: var(--bg-primary);
   position: relative;
@@ -976,4 +978,7 @@ footer {
     width: 240px;
     height: 480px;
   }
+}
+.privacy img{
+  opacity: var(--img-opacity);
 }
