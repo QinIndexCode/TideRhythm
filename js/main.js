@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
           top: targetElement.offsetTop - 80,
           behavior: "smooth",
         })
-
+        
         // 如果在移动端，点击后关闭菜单
         if (navLinks && navLinks.classList.contains("active")) {
           navLinks.classList.remove("active")
@@ -149,8 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 这里只是一个示例，实际应用中可能需要使用翻译API或预定义的翻译文本
     const translations = {
-      "潮韵 - 专业的生理期追踪应用": "Chao Yun - Professional Menstrual Cycle Tracker",
-      潮韵: "Chao Yun",
+      "潮韵 - 专业的生理期追踪应用": "TideRhythm - Professional Menstrual Cycle Tracker",
+      潮韵: "TideRhythm",
       功能: "Features",
       隐私:"Privacy",
       隐私保障: "Privacy",
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
       用户协议: "Terms of Use",
       切换主题: "Toggle Theme",
       切换语言: "Switch Language",
-      "潮韵 - 您的专业生理期管理工具": "Chao Yun - Your Professional Menstrual Cycle Management Tool",
+      "潮韵 - 您的专业生理期管理工具": "TideRhythm - Your Professional Menstrual Cycle Management Tool",
       "安全、私密、精准的生理期追踪应用，由个人开发者 QinIndexCode 精心打造":
         "Safe, private, and precise menstrual cycle tracking app, carefully crafted by individual developer QinIndexCode",
       立即下载: "Download Now",
@@ -184,14 +184,14 @@ document.addEventListener("DOMContentLoaded", () => {
         "Independently developed by GitHub developer QinIndexCode, focused on user experience",
       隐私至上: "Privacy First",
       "在潮韵，我们深知生理期数据的敏感性。因此，我们采取了以下措施保护您的隐私：":
-        "At Chao Yun, we understand the sensitivity of menstrual cycle data. Therefore, we have taken the following measures to protect your privacy:",
+        "At TideRhythm, we understand the sensitivity of menstrual cycle data. Therefore, we have taken the following measures to protect your privacy:",
       所有数据仅存储在您的设备上: "All data is stored only on your device",
       无需创建账户或提供个人信息: "No need to create an account or provide personal information",
       应用不收集任何用户数据: "The app does not collect any user data",
       "无广告，无追踪": "No ads, no tracking",
       "开源代码，透明可信": "Open source code, transparent and trustworthy",
       查看完整隐私政策: "View Full Privacy Policy",
-      "开始使用潮韵，掌握您的生理周期": "Start using Chao Yun and take control of your menstrual cycle",
+      "开始使用潮韵，掌握您的生理周期": "Start using TideRhythm and take control of your menstrual cycle",
       您的专业生理期管理工具: "Your Professional Menstrual Cycle Management Tool",
       链接: "Links",
       联系开发者: "Contact Developer",
@@ -229,11 +229,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 更新页面标题
     if (document.title === "潮韵 - 专业的生理期追踪应用") {
-      document.title = "Chao Yun - Professional Menstrual Cycle Tracker"
+      document.title = "TideRhythm - Professional Menstrual Cycle Tracker"
     } else if (document.title === "隐私政策 - 潮韵") {
-      document.title = "Privacy Policy - Chao Yun"
+      document.title = "Privacy Policy - TideRhythm"
     } else if (document.title === "用户协议 - 潮韵") {
-      document.title = "Terms of Use - Chao Yun"
+      document.title = "Terms of Use - TideRhythm"
     }
 
     // 更新属性
