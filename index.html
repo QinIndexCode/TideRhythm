@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="light-mode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>潮韵 - 隐私至上的生理期追踪应用</title>
+    <title>潮韵 - 专业的生理期追踪应用</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">潮韵</div>
+            <div class="logo">
+                <span class="logo-text">潮韵</span>
+            </div>
             <div class="nav-links">
-                <a href="#features">功能</a>
-                <a href="#privacy">隐私保障</a>
-                <a href="#download">下载</a>
-                <a href="privacy.html">隐私政策</a>
-                <a href="terms.html">用户协议</a>
-                <button id="language-toggle">EN</button>
+                <a href="#features" class="nav-link">功能</a>
+                <a href="#privacy" class="nav-link">隐私保障</a>
+                <a href="#download" class="nav-link">下载</a>
+                <a href="privacy.html" class="nav-link">隐私政策</a>
+                <a href="terms.html" class="nav-link">用户协议</a>
+                <button id="language-toggle" class="icon-btn" aria-label="切换语言">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button id="theme-toggle" class="icon-btn" aria-label="切换主题">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -27,57 +37,59 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1><span class="highlight">潮韵</span> - 您的私人生理期助手</h1>
-            <p>安全、私密、智能的生理期追踪应用，由个人开发者 QinIndexCode 精心打造</p>
-            <div class="hero-buttons">
+            <h1 class="reveal-text"><span class="accent">潮韵</span> - 您的专业生理期管理工具</h1>
+            <p class="reveal-text delay-1">安全、私密、精准的生理期追踪应用，由个人开发者 QinIndexCode 精心打造</p>
+            <div class="hero-buttons reveal-text delay-2">
                 <a href="#download" class="btn primary">立即下载</a>
                 <a href="#features" class="btn secondary">了解更多</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="images/app-preview.png" alt="潮韵应用预览">
+        <div class="hero-image reveal-slide">
+            <div class="phone-mockup">
+                <img src="images/app-preview.png" alt="潮韵应用预览" class="app-preview">
+            </div>
         </div>
     </section>
 
     <section id="features" class="features">
-        <h2>主要功能</h2>
+        <h2 class="section-title reveal-text">核心功能</h2>
         <div class="feature-grid">
-            <div class="feature-card">
+            <div class="feature-card reveal-fade">
                 <div class="feature-icon">
                     <i class="fas fa-shield-alt"></i>
                 </div>
                 <h3>数据本地化</h3>
                 <p>所有数据存储在您的设备上，确保隐私安全，无需担心数据泄露</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card reveal-fade delay-1">
                 <div class="feature-icon">
                     <i class="fas fa-bell"></i>
                 </div>
                 <h3>智能提醒</h3>
                 <p>节日提醒、经期临近提醒、生日提醒，重要日子不再错过</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card reveal-fade delay-2">
                 <div class="feature-icon">
                     <i class="fas fa-calculator"></i>
                 </div>
                 <h3>本地算法</h3>
                 <p>预测算法全部在本地运行，不进行任何联网，保护您的隐私</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card reveal-fade delay-3">
                 <div class="feature-icon">
                     <i class="fas fa-language"></i>
                 </div>
                 <h3>多语言支持</h3>
                 <p>支持中文和英文界面，满足不同用户的需求</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card reveal-fade delay-4">
                 <div class="feature-icon">
                     <i class="fas fa-paint-brush"></i>
                 </div>
                 <h3>多主题选择</h3>
                 <p>多种主题可选，个性化您的应用界面</p>
             </div>
-            <div class="feature-card">
+            <div class="feature-card reveal-fade delay-5">
                 <div class="feature-icon">
                     <i class="fas fa-code"></i>
                 </div>
@@ -88,28 +100,28 @@
     </section>
 
     <section id="privacy" class="privacy">
-        <div class="privacy-content">
-            <h2>隐私至上</h2>
+        <div class="privacy-content reveal-slide">
+            <h2 class="section-title">隐私至上</h2>
             <p>在潮韵，我们深知生理期数据的敏感性。因此，我们采取了以下措施保护您的隐私：</p>
-            <ul>
-                <li><i class="fas fa-check"></i> 所有数据仅存储在您的设备上</li>
-                <li><i class="fas fa-check"></i> 无需创建账户或提供个人信息</li>
-                <li><i class="fas fa-check"></i> 应用不收集任何用户数据</li>
-                <li><i class="fas fa-check"></i> 无广告，无追踪</li>
-                <li><i class="fas fa-check"></i> 开源代码，透明可信</li>
+            <ul class="privacy-list">
+                <li class="reveal-fade"><i class="fas fa-check"></i> <span>所有数据仅存储在您的设备上</span></li>
+                <li class="reveal-fade delay-1"><i class="fas fa-check"></i> <span>无需创建账户或提供个人信息</span></li>
+                <li class="reveal-fade delay-2"><i class="fas fa-check"></i> <span>应用不收集任何用户数据</span></li>
+                <li class="reveal-fade delay-3"><i class="fas fa-check"></i> <span>无广告，无追踪</span></li>
+                <li class="reveal-fade delay-4"><i class="fas fa-check"></i> <span>开源代码，透明可信</span></li>
             </ul>
-            <a href="privacy.html" class="btn secondary">查看完整隐私政策</a>
+            <a href="privacy.html" class="btn secondary reveal-fade delay-5">查看完整隐私政策</a>
         </div>
-        <div class="privacy-image">
-            <img src="images/privacy.png" alt="隐私保障插图">
+        <div class="privacy-image reveal-slide-right">
+            <img src="images/privacy.png" alt="隐私保障插图" class="privacy-illustration">
         </div>
     </section>
 
     <section id="download" class="download">
-        <h2>立即下载</h2>
-        <p>开始使用潮韵，掌握您的生理周期</p>
-        <div class="download-options">
-            <a href="https://github.com/QinIndexCode/chaoyun/releases" class="download-btn">
+        <h2 class="section-title reveal-text">立即下载</h2>
+        <p class="reveal-text delay-1">开始使用潮韵，掌握您的生理周期</p>
+        <div class="download-options reveal-fade delay-2">
+            <a href="https://github.com/QinIndexCode/chaoyun/releases" class="download-btn" target="_blank">
                 <i class="fab fa-github"></i>
                 <span>GitHub 下载</span>
             </a>
@@ -126,11 +138,11 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-logo">
+            <div class="footer-logo reveal-fade">
                 <h3>潮韵</h3>
-                <p>您的私人生理期助手</p>
+                <p>您的专业生理期管理工具</p>
             </div>
-            <div class="footer-links">
+            <div class="footer-links reveal-fade delay-1">
                 <h4>链接</h4>
                 <a href="#features">功能</a>
                 <a href="#privacy">隐私</a>
@@ -138,7 +150,7 @@
                 <a href="privacy.html">隐私政策</a>
                 <a href="terms.html">用户协议</a>
             </div>
-            <div class="footer-contact">
+            <div class="footer-contact reveal-fade delay-2">
                 <h4>联系开发者</h4>
                 <a href="https://github.com/QinIndexCode" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                 <a href="mailto:contact@chaoyun-app.com"><i class="fas fa-envelope"></i> Email</a>
