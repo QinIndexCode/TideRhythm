@@ -150,8 +150,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // 这里只是一个示例，实际应用中可能需要使用翻译API或预定义的翻译文本
     const translations = {
       "潮韵 - 专业的生理期追踪应用": "TideRhythm - Professional Menstrual Cycle Tracker",
-      潮韵: "TideRhythm",
-      功能: "Features",
+      潮韵:"TideRhythm",
+      功能:"Features",
+      首页:"Home",
       隐私:"Privacy",
       隐私保障: "Privacy",
       下载: "Download",
